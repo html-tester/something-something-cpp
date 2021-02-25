@@ -12,5 +12,11 @@ int main() {
   signal(SIGHUP, signal);
   signal(SIGTERM, signal);
   /* todo test if git-blame-someone-else works */
-  /* todo make more program plseaes */
+  GotoLabel: {}
+  std::cout << "Type something...> ";
+  std::cin >> input;
+  goto GotoLabel; // todo while(true) is much better
+  /* todo havent tested the progrmamn, maybe we shoudl soon */
+  /* todo make mowe pwogwam uwu */
+  /* todo fix ticket 2441 (double personality disorder) */
 }
