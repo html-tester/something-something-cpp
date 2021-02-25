@@ -7,4 +7,8 @@ void signal(int) {
   std::cout << "\nI only accept SIGKILL and SIGSTOP\nType something...> ";
 }
 
-/* todo make int main */
+int main() {
+  signal(SIGINT, signal);
+  signal(SIGHUP, signal);
+  signal(SIGTERM, signal);
+}
